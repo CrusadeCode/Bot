@@ -27,4 +27,21 @@ async def heh(ctx, count_heh = 5):
 @bot.command(name = "coin")
 async def luck(ctx):
     await ctx.send(l.coin())
+
+@bot.command(name = "meme")
+async def momazos(ctx):
+    a = l.meme()
+    await ctx.send(file=a)
+
+@bot.command(name = "momo")
+async def bromas(ctx):
+    a = l.momo()
+    await ctx.send(file=a)
+
+@bot.command(name = "duck")
+async def patos(ctx):
+    a = l.duck_image()
+    await ctx.send(a)
+
+
 bot.run(token)
